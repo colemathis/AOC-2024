@@ -1,0 +1,13 @@
+[package]
+name = "problem-01"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3        # Maximum optimization
+lto = "fat"          # Link Time Optimization (reduces binary size and increases speed)
+codegen-units = 1    # Single codegen unit for better optimization
+
+
+[dependencies]
+
